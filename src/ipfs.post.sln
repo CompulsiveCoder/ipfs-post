@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ipfs.post.WWW", "ipfs.post.WWW\ipfs.post.WWW.csproj", "{EFA8F4A1-364E-4055-9604-F6E5EC51401A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ipfs.post", "ipfs.post\ipfs.post.csproj", "{4823FB56-B3B0-4A0C-8766-544EBE571E9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4823FB56-B3B0-4A0C-8766-544EBE571E9D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4823FB56-B3B0-4A0C-8766-544EBE571E9D}.Debug|x86.Build.0 = Debug|Any CPU
+		{4823FB56-B3B0-4A0C-8766-544EBE571E9D}.Release|x86.ActiveCfg = Release|Any CPU
+		{4823FB56-B3B0-4A0C-8766-544EBE571E9D}.Release|x86.Build.0 = Release|Any CPU
+		{EFA8F4A1-364E-4055-9604-F6E5EC51401A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EFA8F4A1-364E-4055-9604-F6E5EC51401A}.Debug|x86.Build.0 = Debug|Any CPU
+		{EFA8F4A1-364E-4055-9604-F6E5EC51401A}.Release|x86.ActiveCfg = Release|Any CPU
+		{EFA8F4A1-364E-4055-9604-F6E5EC51401A}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = ipfs.echo.WWW\ipfs.echo.WWW.csproj
+	EndGlobalSection
+EndGlobal

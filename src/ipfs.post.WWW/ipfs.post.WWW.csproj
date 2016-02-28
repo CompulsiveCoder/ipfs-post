@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{EFA8F4A1-364E-4055-9604-F6E5EC51401A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ipfs.post.WWW</RootNamespace>
+    <AssemblyName>ipfs.echo.WWW</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="ipfs.Core">
+      <HintPath>..\..\..\ipfs-echo\bin\Release\ipfs.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ipfs.echo.Core">
+      <HintPath>..\..\..\ipfs-echo\bin\Release\ipfs.echo.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ipfs.Managed">
+      <HintPath>..\..\..\ipfs-echo\bin\Release\ipfs.Managed.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="web.config" />
+    <Content Include="styles.css" />
+    <Content Include="CreateKey.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Echo.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="CreateKey.aspx.cs">
+      <DependentUpon>CreateKey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateKey.aspx.designer.cs">
+      <DependentUpon>CreateKey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Echo.aspx.designer.cs">
+      <DependentUpon>Echo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Echo.aspx.cs">
+      <DependentUpon>Echo.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8082" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\ipfs.post\ipfs.post.csproj">
+      <Project>{4823FB56-B3B0-4A0C-8766-544EBE571E9D}</Project>
+      <Name>ipfs.post</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
