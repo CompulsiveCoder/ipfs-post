@@ -1,2 +1,2 @@
-cd src/ipfs.echo.WWW
+cd src/ipfs.post.WWW
 xsp4 --port 8082
