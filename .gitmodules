@@ -1,0 +1,3 @@
+[submodule "mod/ipfs-echo"]
+	path = mod/ipfs-echo
+	url = https://github.com/CompulsiveCoder/ipfs-echo.git
