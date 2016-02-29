@@ -1,2 +1,2 @@
 cd src/ipfs.post.WWW
-xsp4 --port 8082
+ipfs daemon & xsp4 --port 8081
