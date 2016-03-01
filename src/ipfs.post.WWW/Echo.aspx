@@ -15,7 +15,7 @@
 		<div>Ipfs key: <%= FolderName %></div>
 		<div>Device key: <%= DeviceKey %></div>
 		<div>&nbsp;</div>
-		<div>You can acces the data via the following links:</div>
+		<div>You can access the data via the following links:</div>
 		<div><a href='<%= LocalUrl %>'><%= LocalUrl %></a></div>
 		<div><a href='<%= IpfsUrl %>'><%= IpfsUrl %></a></div>
 		<div>&nbsp;</div>
