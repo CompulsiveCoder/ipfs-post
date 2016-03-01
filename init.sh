@@ -1,6 +1,6 @@
 DIR=$PWD
 
-sudo apt-get install -y mono-runtime mono-xsp4
+sudo apt-get install -y mono-complete mono-xsp4
 
 wget -q https://raw.githubusercontent.com/ipfs/install-go-ipfs/master/install-ipfs.sh
 sudo sh install-ipfs.sh
