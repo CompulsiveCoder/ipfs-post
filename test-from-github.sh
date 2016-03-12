@@ -7,7 +7,7 @@ fi
 echo "Branch: $BRANCH"
 
 git clone https://github.com/CompulsiveCoder/ipfs-post.git --branch $BRANCH
-cd ipfs-cs
+cd ipfs-post
 
 git submodule update --init --recursive
 
