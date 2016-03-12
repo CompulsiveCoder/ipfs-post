@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ipfs.post.WWW", "ipfs.post.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ipfs.post", "ipfs.post\ipfs.post.csproj", "{4823FB56-B3B0-4A0C-8766-544EBE571E9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ipfs.post.Tests", "ipfs.post.Tests\ipfs.post.Tests.csproj", "{BCB407BB-5113-4060-924D-3FC5CBFCE9F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,6 +17,10 @@ Global
 		{4823FB56-B3B0-4A0C-8766-544EBE571E9D}.Debug|x86.Build.0 = Debug|Any CPU
 		{4823FB56-B3B0-4A0C-8766-544EBE571E9D}.Release|x86.ActiveCfg = Release|Any CPU
 		{4823FB56-B3B0-4A0C-8766-544EBE571E9D}.Release|x86.Build.0 = Release|Any CPU
+		{BCB407BB-5113-4060-924D-3FC5CBFCE9F8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BCB407BB-5113-4060-924D-3FC5CBFCE9F8}.Debug|x86.Build.0 = Debug|Any CPU
+		{BCB407BB-5113-4060-924D-3FC5CBFCE9F8}.Release|x86.ActiveCfg = Release|Any CPU
+		{BCB407BB-5113-4060-924D-3FC5CBFCE9F8}.Release|x86.Build.0 = Release|Any CPU
 		{EFA8F4A1-364E-4055-9604-F6E5EC51401A}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{EFA8F4A1-364E-4055-9604-F6E5EC51401A}.Debug|x86.Build.0 = Debug|Any CPU
 		{EFA8F4A1-364E-4055-9604-F6E5EC51401A}.Release|x86.ActiveCfg = Release|Any CPU

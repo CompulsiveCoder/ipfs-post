@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4823FB56-B3B0-4A0C-8766-544EBE571E9D}</ProjectGuid>
+    <ProjectGuid>{BCB407BB-5113-4060-924D-3FC5CBFCE9F8}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>ipfs.post</RootNamespace>
-    <AssemblyName>ipfs.post</AssemblyName>
+    <RootNamespace>ipfs.post.Tests</RootNamespace>
+    <AssemblyName>ipfs.post.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -29,19 +29,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\lib\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="KeyGenerator.cs" />
-    <Compile Include="KeyManager.cs" />
-    <Compile Include="KeySaver.cs" />
-    <Compile Include="KeySet.cs" />
-    <Compile Include="KeyFolderCreator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <Content Include="ipfs.sh">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
 </Project>
