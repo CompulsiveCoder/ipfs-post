@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Web;
 using System.Web.UI;
-using ipfsecho.Core;
+using ipfs.echo.Core;
 
 namespace ipfs.post.WWW
 {
@@ -18,6 +18,7 @@ namespace ipfs.post.WWW
 
 		public string LocalUrl = "";
 		public string IpfsUrl = "";
+		public string PostUrl = "";
 
 		string UrlFormat = "{0}/{1}/{2}";
 
@@ -44,6 +45,8 @@ namespace ipfs.post.WWW
 
 					var echo = new ipfsEcho ();
 					echo.IsVerbose = true;
+
+					CreatePostUrl (TextData, FolderName, FileName, DeviceKey, Overwrite);
 
 					if (String.IsNullOrEmpty (DeviceKey)) {
 						var hash = echo.Echo (TextData);
@@ -76,6 +79,15 @@ namespace ipfs.post.WWW
 			LocalUrl = String.Format (UrlFormat, LocalUrlStart, protocol, relativePath);
 			IpfsUrl = String.Format (UrlFormat, IpfsUrlStart, protocol, relativePath);
 		}
+
+		private void CreatePostUrl(string text, string folder, string file, string key, bool overwrite)		
+		{
+			var url = String.Format ("~/Echo.aspx?folder={0}&file={1}&key={2}&overwrite={3}&text={4}", HttpUtility.UrlEncode(folder), HttpUtility.UrlEncode(file), HttpUtility.UrlDecode(key), overwrite, HttpUtility.UrlEncode(text));
+
+			//PostUrl = Request.Url.ToString().Replace(HttpUtility.UrlEncode(text), HttpUtility.UrlEncode("[texthere]"));
+			PostUrl = HttpTool.Absolute (url);
+		}
+
 
 		bool IsAuthenticated()
 		{

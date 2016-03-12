@@ -15,9 +15,11 @@ namespace ipfs.post.WWW {
 		
 		protected System.Web.UI.HtmlControls.HtmlForm form1;
 		
+		protected System.Web.UI.WebControls.Button CreateKeyButton;
+		
 		protected System.Web.UI.WebControls.TextBox Folder;
 		
-		protected System.Web.UI.WebControls.TextBox DeviceKey;
+		protected System.Web.UI.WebControls.TextBox Device;
 		
 		protected System.Web.UI.WebControls.TextBox TextData;
 		

@@ -73,6 +73,7 @@
     <Compile Include="Echo.aspx.cs">
       <DependentUpon>Echo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="HttpTool.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
