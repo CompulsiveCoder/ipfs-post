@@ -1,7 +1,5 @@
 DIR=$PWD
 
-cd $DIR
-
 cd mod/ipfs-echo/
 sh init.sh
 cd $DIR
