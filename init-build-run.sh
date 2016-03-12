@@ -1,5 +1,3 @@
-sh init.sh
-
-sh build.sh
-
-sh run-ipfs.sh & sh run.sh
+sh init.sh && \
+sh build.sh && \
+(sh run-ipfs.sh & sh run.sh)
