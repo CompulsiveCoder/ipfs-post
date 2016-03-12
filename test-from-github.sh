@@ -6,6 +6,6 @@ fi
 
 echo "Branch: $BRANCH"
 
-git clone https://github.com/CompulsiveCoder/ipfs-echo.git --branch $BRANCH
+git clone https://github.com/CompulsiveCoder/ipfs-post.git --branch $BRANCH
 cd ipfs-cs
 sh init-build-test.sh
