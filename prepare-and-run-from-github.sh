@@ -1,3 +1,14 @@
-curl https://raw.githubusercontent.com/CompulsiveCoder/ipfs-post/master/prepare.sh | sh
-curl https://raw.githubusercontent.com/CompulsiveCoder/ipfs-post/master/run-from-github.sh | sh
+BRANCH=$1
 
+if [ -z "$BRANCH" ]; then
+    BRANCH=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+fi
+
+if [ -z "$BRANCH" ]; then
+    BRANCH="master"
+fi
+
+echo "Branch: $BRANCH"
+
+curl https://raw.githubusercontent.com/CompulsiveCoder/ipfs-post/$BRANCH/prepare.sh | sh
+curl https://raw.githubusercontent.com/CompulsiveCoder/ipfs-post/$BRANCH/run-from-github.sh | sh -s $BRANCH

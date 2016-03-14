@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Web;
 using System.Web.UI;
-using ipfs.echo.Core;
 
 namespace ipfs.post.WWW
 {
