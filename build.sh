@@ -1,3 +1,6 @@
+echo "Starting build for ipfs-post project"
+echo "Dir: $PWD"
+
 DIR=$PWD
 
 cd mod/ipfs-echo/
