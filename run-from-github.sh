@@ -10,9 +10,9 @@ fi
 
 echo "Branch: $BRANCH"
 
-git clone https://github.com/CompulsiveCoder/ipfs-post.git --branch $BRANCH
+git clone https://github.com/CompulsiveCoder/ipfs-post.git --recursive --branch $BRANCH
 cd ipfs-post
 
-git submodule update --init --recursive
+#git submodule update --init --recursive
 
 sh init-build-run.sh
