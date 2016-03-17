@@ -29,6 +29,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="ipfs.Core">
+      <HintPath>..\..\mod\ipfs-echo\bin\Release\ipfs.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ipfs.echo.Core">
+      <HintPath>..\..\mod\ipfs-echo\bin\Release\ipfs.echo.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
