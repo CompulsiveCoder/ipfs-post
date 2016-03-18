@@ -3,6 +3,8 @@ DIR=$PWD
 echo "Initializing ipfs-post project"
 echo "Dir: $PWD"
 
+git submodule update --init --recursive
+
 cd mod/ipfs-echo/
 INIT_FILE="init.sh"
 if [ ! -f "$INIT_FILE" ]; then
